@@ -1,4 +1,5 @@
 import React from "react";
+import Quote from "./Quote";
 // src/Quotes.js
 const quotes = [
     {
@@ -32,7 +33,7 @@ const quotes = [
 const Quotes = () => (
     <div>
         {quotes.map(quote => (
-            <img src={quote.image} />
+            <Quote quote={quote.quote} image={quote.image} character={quote.character} />
         ))}
     </div>
 );
