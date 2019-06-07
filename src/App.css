@@ -8,6 +8,30 @@
   pointer-events: none;
 }
 
+.App-logo img.working {
+  height: 40vmin;
+  animation: App-logo-spin infinite 1s linear;
+}
+.App-logo img.sleep {
+  height: 40vmin;
+  animation: App-logo-spin-fail infinite 1s linear;
+}
+
+.App-header button {
+  left: 20px;
+  top: 20px;
+  border: none;
+  padding: 15px 15px;
+  color: #fff;
+}
+
+.App-header button.working {
+  background: green;
+}
+.App-header button.sleep {
+  background: red;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -33,4 +57,22 @@
   }
 }
 
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin-fail {
+  from {
+    transform: rotate(0deg) scale(0.2) skew(3deg);
+  }
+  to {
+    transform: rotate(360deg) scale(1) skew(50deg);
+  }
+}
 
