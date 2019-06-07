@@ -4,6 +4,7 @@ import './App.css';
 
 import Quotes from "./Quotes";
 import Lamp from "./Lamp";
+import NameForm from "./NameForm";
 
 
 class App extends Component {
@@ -29,7 +30,9 @@ class App extends Component {
                     <h1 className="App-title">Simpsons Quotes</h1>
                     <button onClick={this.handleClick} className={working}>{working.toUpperCase()}</button>
                 </header>
-
+                <hr/>
+                <h2>Form Exercise</h2>
+                <NameForm />
                 <hr/>
                 <h2>Lamp Exercise</h2>
                 <Lamp on />
